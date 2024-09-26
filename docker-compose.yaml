@@ -7,7 +7,7 @@ services:
       - /etc/hosts:/etc/hosts:ro
     networks:
       default:
-        ipv4_address: 10.112.250.224
+        ipv4_address: 10.112.250.111
 
 networks:
   default:
