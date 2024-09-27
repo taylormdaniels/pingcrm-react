@@ -7,8 +7,28 @@ export default () => {
   const { auth } = usePage<PageProps>().props;
   const [menuOpened, setMenuOpened] = useState(false);
 
+
   return (
-    <div className="flex items-center justify-between w-full p-4 text-sm bg-white border-b md:py-0 md:px-12 d:text-md">
+    <div className="flex items-end justify-between w-full p-4 text-md bg-white border-b md:py-0 md:px-12 d:text-lg">
+     <div id="topnav-tabs" className="text-md font-medium text-end text-black border-gray-200 dark:text-gray-400 dark:border-gray-700">
+        <ul className="flex flex-wrap">
+          <li className="me-1">
+              <a href="#" className="inline-block p-4 border-2 border-gray-300 rounded-t-lg hover:text-gray-600 hover:bg-slate-200 dark:hover:text-gray-300 active:border-b-blue-500 active:text-blue-500">Profile</a>
+          </li>
+          <li className="me-1">
+              <a href="/" id="dashboard"className="inline-block rounded-t-lg p-4 border-2 border-gray-300 rounded-t-lg hover:text-gray-600 hover:bg-slate-200 dark:text-blue-500 dark:border-blue-500 active:border-b-blue-500 active:text-blue-500" aria-current="page">Dashboard</a>
+          </li>
+          <li className="me-1">
+              <a href={route('users.edit', auth.user.id)} className="inline-block p-4 border-2 border-gray-300 rounded-t-lg hover:text-gray-600 hover:bg-slate-200 hover:border-gray-300 dark:hover:text-gray-300 active:border-b-blue-500 active:text-blue-500" aria-current="page">Settings</a>
+          </li>
+          <li className="me-1">
+              <a href="#" className="inline-block p-4 border-2 border-gray-300 rounded-t-lg hover:text-gray-600 hover:bg-slate-200 dark:hover:text-gray-300 active:border-b-blue-500 active:text-blue-500" aria-current="page">Contacts</a>
+          </li>
+          <li>
+              <a className="inline-block p-4 text-gray-400 rounded-t-lg cursor-not-allowed dark:text-gray-500 cursor">Disabled</a>
+          </li>
+        </ul>
+      </div>
       <div className="mt-1 mr-4">{auth.user.account.name}</div>
       <div className="relative">
         <div
