@@ -151,3 +151,5 @@ Route::get('tasks', [TasksController::class, 'index']);
 //Timeline
 
 Route::get('timeline', [TimelineController::class, 'index']);
+
+Route::get('timeline/active', [TimelineController::class, 'active']);

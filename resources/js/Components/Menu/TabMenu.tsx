@@ -6,7 +6,7 @@ interface TabMenuProps {
   text: string;
 }
 
-export default function TabMenu(link, text)
+export default function TabMenu(, text)
 {
     return (
     <div id="topnav-tabs" className="text-md font-medium text-end text-black border-gray-200 dark:text-gray-400 dark:border-gray-700">

@@ -11,4 +11,9 @@ class TimelineController extends Controller
     {
         return Inertia::render('Timeline/Index');
     }
+
+    public function active(): Response
+    {
+        return Inertia::render('Timeline/Active');
+    }
 }

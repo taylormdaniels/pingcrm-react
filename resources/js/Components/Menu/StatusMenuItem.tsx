@@ -5,9 +5,10 @@ interface StatusMenuItemProps {
   icon?: React.ReactNode;
   link: string;
   text: string;
+  color: string;
 }
 
-export default function StatusMenuItem({ icon, link, text }: StatusMenuItemProps) {
+export default function StatusMenuItem({ link, text, color }: StatusMenuItemProps) {
   const isActive = route().current(link + '*');
 
   const iconClasses = classNames({
@@ -21,12 +22,11 @@ export default function StatusMenuItem({ icon, link, text }: StatusMenuItemProps
   });
 
   return (
-    <div className="mb-4">
+    <div className={`mb-3 border-solid ${color} border-white`}>
       <Link
         href={route(link)}
-        className="flex items-center group py-3 space-x-3"
+        className='inline-block w-full p-2 text-white border border-gray-200 dark:border-gray-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:bg-gray-700 dark:text-white' aria-current="page"
       >
-        <div className={iconClasses}>{icon}</div>
         <div className={textClasses}>{text}</div>
       </Link>
     </div>
