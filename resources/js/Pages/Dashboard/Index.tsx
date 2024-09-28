@@ -1,5 +1,6 @@
 import { Link } from '@inertiajs/react';
 import MainLayout from '@/Layouts/MainLayout';
+import Module from '@/Components/Module/Module';
 
 function DashboardPage() {
   return (
@@ -24,12 +25,7 @@ function DashboardPage() {
         .
       </p>
       <div>
-        <Link className="mr-1 btn-indigo" href="/500">
-          500 error
-        </Link>
-        <Link className="btn-indigo" href="/404">
-          404 error
-        </Link>
+      <Module />
       </div>
     </div>
   );
