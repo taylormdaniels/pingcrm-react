@@ -1,5 +1,5 @@
-{
-    "name": "laravel/laravel",
+
+    {2"name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
     "keywords": [
@@ -8,7 +8,7 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.2",
+        "php": ">=8.2",
         "ext-exif": "*",
         "ext-gd": "*",
         "fakerphp/faker": "^1.23",
