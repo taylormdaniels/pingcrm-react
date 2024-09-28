@@ -10,7 +10,6 @@ export default () => {
   return (
       <div className="flex items-center justify-between px-6 py-4 bg-indigo-900 md:flex-shrink-0 md:w-56 md:justify-center">
         <Link className="mt-1" href="/">
-          <Logo className="text-white fill-black" width='64px' height='64px' />
           <h1 className="text-white text-xl ">Ticket Tracker Pro</h1>
         </Link>
         <div className="relative md:hidden">
@@ -20,11 +19,9 @@ export default () => {
             onClick={() => setMenuOpened(true)}
             className="cursor-pointer"
             />
-        
           <div className={`${menuOpened ? '' : 'hidden'} absolute right-0 z-20`}>
             <MainMenu className="relative z-20 px-8 py-4 pb-2 mt-2 bg-indigo-800 rounded shadow-lg" />
             <div className="relative text-white">
-              <h1 className="text-5xl">What is the name?</h1>
             </div>
             <div
               onClick={() => {

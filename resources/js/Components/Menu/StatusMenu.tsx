@@ -8,24 +8,24 @@ export default function StatusMenu({ className }: StatusMenuProps) {
     return (
         <div className={className}>
             <StatusMenuItem
-                text="Behind Schedule"
+                text="Urgent"
                 link="dashboard"
                 color="bg-red-700"
             />
             <StatusMenuItem
-                text="Needs Attention"
+                text="Reminder"
                 link="organizations"
                 color="bg-orange-700"
             />
             <StatusMenuItem
-                text="Active Jobs"
+                text="Attention"
                 link="contacts"
-                color="bg-green-700"
+                color="bg-blue-700"
             />
             <StatusMenuItem
-                text="Reports"
+                text="Tracking"
                 link="reports"
-                color="bg-gray-500"
+                color="bg-green-500"
             />
         </div>
     )

@@ -7,9 +7,9 @@ services:
       - /etc/hosts:/etc/hosts:ro
     networks:
       default:
-        ipv4_address: 10.112.250.111
+        ipv4_address: 10.197.213.130
 
 networks:
   default:
     external: true
-    name: docker-stack_ysAzisH2_vpc
+    name: docker-stack_uCBivh9S_vpc

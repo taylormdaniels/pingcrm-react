@@ -19,18 +19,18 @@ export default () => {
               <a href="tasks" className="inline-block p-4 border-2 border-gray-300 rounded-t-lg hover:text-gray-600 hover:bg-slate-200 dark:hover:text-gray-300 active:border-b-blue-500 active:text-blue-500">Shawn</a>
           </li>
           <li className="me-1">
-              <a href="timeline" className="inline-block p-4 border-2 border-gray-300 rounded-t-lg hover:text-gray-600 hover:bg-slate-200 hover:border-gray-300 dark:hover:text-gray-300 active:border-b-blue-500 active:text-blue-500" aria-current="page">Kelly</a>
+              <a href="timeline" className="inline-block p-4 border-2 border-gray-300 rounded-t-lg hover:text-gray-600 hover:bg-slate-200 hover:border-gray-300 dark:hover:text-gray-300 active:border-b-blue-500 active:text-blue-500" aria-current="page">James</a>
           </li>
           <li className="me-1">
-              <a href="#" className="inline-block p-4 border-2 border-gray-300 rounded-t-lg hover:text-gray-600 hover:bg-slate-200 dark:hover:text-gray-300 active:border-b-blue-500 active:text-blue-500" aria-current="page">My Tasks</a>
+              <a href="#" className="inline-block p-4 border-2 border-gray-300 rounded-t-lg hover:text-gray-600 hover:bg-slate-200 dark:hover:text-gray-300 active:border-b-blue-500 active:text-blue-500" aria-current="page">Sales</a>
           </li>
           <li>
               <a className="inline-block p-4 text-gray-400 rounded-t-lg cursor-not-allowed dark:text-gray-500 cursor">Disabled</a>
           </li>
         </ul>
       </div>
-      <div className="mt-1 mr-4">{auth.user.account.name}</div>
-      <div className="relative">
+      <div className="mt-1 mr-2">{auth.user.account.name}</div>
+      <div className="">
         <div
           className="flex items-center cursor-pointer select-none group"
           onClick={() => setMenuOpened(true)}
