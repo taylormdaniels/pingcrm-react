@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreTaskRequest;
-use App\Http\Requests\UpdateTaskRequest;
-use App\Models\Task;
+use App\Http\Requests\StoreJobRequest;
+use App\Http\Requests\UpdateJobRequest;
+use App\Models\Job;
 
-class TasksController extends Controller
+class JobsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class TasksController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreTaskRequest $request)
+    public function store(StoreJobRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class TasksController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Task $task)
+    public function show(Job $job)
     {
         //
     }
@@ -43,7 +43,7 @@ class TasksController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Task $task)
+    public function edit(Job $job)
     {
         //
     }
@@ -51,7 +51,7 @@ class TasksController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateTaskRequest $request, Task $task)
+    public function update(UpdateJobRequest $request, Job $job)
     {
         //
     }
@@ -59,7 +59,7 @@ class TasksController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Task $task)
+    public function destroy(Job $job)
     {
         //
     }

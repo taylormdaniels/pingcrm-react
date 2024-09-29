@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->integer('admin_id');
-            $table->integer('customer_id');
+            $table->foreignId('user_id');
+            $table->foreignId('account_id');
             $table->integer('conversation_id');
             $table->string('billing_name',64);
             $table->string('billing_company',32 );
@@ -32,7 +32,7 @@ return new class extends Migration
             $table->dateTime('date_purchased');
             $table->decimal('orders_deposit',15,2);
             $table->string('orders_po',30);
-            $table->integer('orders_status');
+            $table->foreignId('orders_status');
             $table->decimal('subtotal',10,2);
             $table->decimal('total',10,2);  
             $table->decimal('balance_due',10,2);

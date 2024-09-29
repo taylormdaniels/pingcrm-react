@@ -6,7 +6,7 @@ use App\Http\Requests\StoreTaskRequest;
 use App\Http\Requests\UpdateTaskRequest;
 use App\Models\Task;
 
-class TasksController extends Controller
+class AccountsController extends Controller
 {
     /**
      * Display a listing of the resource.

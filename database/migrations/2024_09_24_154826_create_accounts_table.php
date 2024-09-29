@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('accounts', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->foreignId('organization_id');
+            $table->foreignId('user_id');
+            $table->foreignId('contact_id');
+            $table->foreignId('role');
+            $table->foreignId('last_updated_by')->nullable();
             $table->timestamps();
         });
     }

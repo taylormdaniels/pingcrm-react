@@ -15,10 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('status_description', 32);
             $table->tinyInteger('active');
-            $table->smallInteger('order_id')->unsigned();
-            $table->dateTime('created');
-            $table->dateTime(column: 'last_modified');
-            $table->dateTime('last_accessed');
+            $table->foreignId('order_id');
+            $table->dateTime(column: 'last_modified')->nullable();
+            $table->dateTime('last_accessed')->nullable();
             $table->timestamps();
         });
     }

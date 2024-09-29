@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('quotes', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id');
+            $table->foreignId('account_id');
+            $table->foreignId('conversation_id')->nullable();
+            $table->foreignId('quotes_status')->nullable();
+            $table->decimal('subtotal',10,2)->nullable();
+            $table->smallInteger('priority')->nullable();
+            $table->dateTime('last_accessed')->nullable();
+            $table->tinyInteger('show_total')->nullable();
             $table->timestamps();
         });
     }

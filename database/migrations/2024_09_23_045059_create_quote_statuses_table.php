@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('quote_statuses', function (Blueprint $table) {
             $table->id();
+            $table->string('status_description');
+            $table->tinyInteger('active');
+            $table->dateTime('last_modified')->nullable();
+            $table->dateTime('last_accessed')->nullable();
             $table->timestamps();
         });
     }
